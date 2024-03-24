@@ -1,0 +1,295 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.body{
+  width: 100%;
+}
+/* NAVBAR */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding: 10px;
+  align-items: center;
+}
+.nav-1>img{
+  width:200px;
+}
+.nav-2{
+  display: flex;
+  gap:40px;
+  position: relative;
+  right:2.5%;
+}
+.nav-2>p:hover{
+  background-color: white;
+  color: black;
+  transition-duration:1s;
+}
+.nav-2>p{
+  font-size:16px;
+  border: 0.5px solid black;
+  padding: 10px;
+  border-radius:25px;
+  background-color: blueviolet;
+  color:white;
+}
+.nav-3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size:large;
+}
+.nav-3>img{
+  width:30px;
+  }
+.nav-3>p{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  padding:5px; 
+}
+/* TITLE */
+.title{
+  padding:20px;
+  position:relative;
+  text-align: center;
+  right:25px;
+  top: 30px;
+  font-size:20px;
+}
+/* CHOICES */
+.choice{
+  margin: 25px;
+  margin-right:50px;
+  display: flex;
+  justify-content: center;
+  width:100%;
+  padding: 5px;
+}
+.choice>img{
+  width:2%;
+}
+.choice>p{
+  padding:5px;
+  font-size: 16px;
+}
+.choice>p:hover{
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+/* SEARCHBAR */
+.search{
+  border: 1px solid black;
+  border-radius: 30px;
+  padding:5px;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap:15px;
+  position: static;
+  top: 0;
+}
+.cup{
+  margin:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search>input{
+  width:100%;
+  border: none;
+  font-size:20px;
+}
+input:focus{
+  outline: none;
+}
+.search>button{
+  padding:13px;
+  border: 1px solid black;
+  background-color: palevioletred;
+  color: black;
+  border-radius:40px;
+  border: none;
+}
+/* SALE */
+.sale{
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  margin: 5px;
+}
+.sale-container{
+  border: 1px solid black;
+  width: fit-content;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  font-size:large;
+  border: none;
+}
+.sale-container>p{
+  font-size: 20px;
+  padding:5px;
+}
+.holi{
+  position: relative;
+}
+.sale-container__1{
+  margin-top:30px;
+  font-size:x-large;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: blueviolet;
+  color: black;
+  width: fit-content;
+  padding:15px;
+  border: none;
+  position:absolute;
+  bottom: 200px;
+  left: 90px;
+}
+.sale-container__1:hover{
+  background-color: palevioletred;
+  color: black;
+  transition: 2s;
+}
+/* IMAGES-RECOMMENDED-1 */
+.RECOMMENDED{
+  padding: 10px;
+}
+.RECOMMENDED-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.course-card{
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
+}
+.course-card>img{
+  width: 100%;
+}
+.course-card-2{
+  position: relative;
+  bottom:50px;
+  left: 10px;
+  font-size: x-large;
+  color: white;
+  display: flex;
+}
+/* <!-- EXPERINCE--> */
+.experince-container{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.course-card-3{
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
+
+}
+.course-card-3>img{
+  width: 100%;
+
+}
+/* FLOWERS */
+.flower-container{
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+/* FOOTER */
+.footer{
+  background-color: black;
+  color:plum;
+  padding: 30px;
+}
+.footer-container{
+  display: flex;
+  gap: 15px;
+  padding: 25px;
+}
+
+.footer-end{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-4{
+  display: none;
+}
+@media screen and (max-width:600px) {
+  body{
+    font-size: 12px;
+  }
+  
+}
+@media screen and (max-width:600px) {
+  .nav-2,.nav-3{
+    display: none;
+  }
+  .nav-4{
+    display:block;
+  }
+  .title{
+    display: none;
+  }
+  .choice{
+    display: none;
+  }
+  .search>input,placeholder,button{
+    font-size: 10px;
+  }
+  .cup{
+    position:sticky;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+    margin: 5px;
+  }
+  .search>button:hover{
+    background-color: yellowgreen;
+  }
+  .course-card{
+    flex-grow: 1;
+    flex-basis: 40%;
+  }
+  .sale{
+    position: relative;
+  }
+  .sale-container{
+    display:block;
+    font-size:10px;
+    top:70px;
+    left: 15px;
+  }
+  .sale-container__1{
+    display: block;
+    position:absolute;
+    bottom:10px;
+    left: 20px;
+    font-size:10px;
+  }
+  .course-card-2{
+    font-size:10px;
+    position: relative;
+    bottom:20px;
+  }
+  }
+@media screen and (max-width:600px) {
+  .course-card-3{
+    flex-grow: 1;
+    flex-basis: 40%;
+  }
+  
+}
+
+
